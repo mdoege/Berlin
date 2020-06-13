@@ -53,7 +53,6 @@ class Berlin:
         pygame.display.set_caption('Berlin')
         self.screen.fill(BACKGROUND)
         self.clock = pygame.time.Clock()
-        self.last = 0
 
     def events(self):
         for event in pygame.event.get():
@@ -72,9 +71,6 @@ class Berlin:
         pygame.quit()
 
     def update(self):
-        if time.time() - self.last < 1:
-            return
-        self.last = time.time()
         self.screen.fill(BACKGROUND)
         mainprog(self.screen, self.res)
         pygame.display.flip()
