@@ -7,10 +7,10 @@ import pygame
 
 import sys, time, datetime
 
-ORANGE = 204, 100, 0
-YELLOW = 249, 244, 46
-BACKGROUND = 33, 41, 46
-GRAY = 76, 80, 82
+ORANGE = 192, 0, 0
+YELLOW = 192, 192, 0
+BACKGROUND = 0, 0 , 0
+GRAY = 50, 50, 50
 BORDER = 1
 RES = 220,250
 
