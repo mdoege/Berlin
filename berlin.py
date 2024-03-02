@@ -16,6 +16,7 @@ RES = 220,250
 
 def mainprog(win, res):
     box4, box11, boxy = res[0] // 4, res[0] // 11, res[1] // 5
+    b11rest = res[0] - 11 * box11
 
     now = datetime.datetime.now()
     for x in range(4):
@@ -39,8 +40,12 @@ def mainprog(win, res):
             if (x + 1) % 3 == 0: c = ORANGE
             else: c = YELLOW
         else: c = GRAY
-        pygame.draw.rect(win, c, [x * box11 + BORDER, 3 * boxy + BORDER,
-            box11 - 2 * BORDER, boxy - 2 * BORDER])
+        if x == 10:
+            pygame.draw.rect(win, c, [x * box11 + BORDER, 3 * boxy + BORDER,
+                box11 - 2 * BORDER + b11rest, boxy - 2 * BORDER])
+        else:
+            pygame.draw.rect(win, c, [x * box11 + BORDER, 3 * boxy + BORDER,
+                box11 - 2 * BORDER, boxy - 2 * BORDER])
     if now.second % 2 == 0: c = YELLOW
     else: c = GRAY
     pygame.draw.circle(win, c, (2 * box4, boxy // 2), boxy // 2 - BORDER)
