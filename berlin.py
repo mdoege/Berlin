@@ -12,7 +12,7 @@ YELLOW = 192, 192, 0
 BACKGROUND = 0, 0 , 0
 GRAY = 50, 50, 50
 BORDER = 1
-RES = 220,250
+RES = 440,400
 
 def mainprog(win, res):
     box4, box11, boxy = res[0] // 4, res[0] // 11, res[1] // 5
