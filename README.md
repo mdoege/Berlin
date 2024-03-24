@@ -1,6 +1,7 @@
 # Berlin
 
-[Berlin clock](https://en.wikipedia.org/wiki/Mengenlehreuhr) in PyGame
+## An implementation of the [Berlin clock](https://en.wikipedia.org/wiki/Mengenlehreuhr) in PyGame
 
-![screenshot](https://github.com/mdoege/Berlin/raw/master/berlin.png "Berlin screenshot")
+Here is a screenshot of the clock (showing the time 13:45):
 
+![screenshot](berlin.png "Berlin screenshot")
